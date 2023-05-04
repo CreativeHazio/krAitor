@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">krAitor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_incredible_art">Create incredible\nart</string>
+    <string name="join_others">Join others, Sparkle your imaginations!!</string>
+    <string name="create_art">Create New Art</string>
+    <string name="select_options">Choose options</string>
+    <string name="number_of_art">Number of Art</string>
+    <string name="art_style">Art Style</string>
+    <string name="create_art_btn_text">Create art</string>
+    <string name="art_created">Art\ncreated</string>
+    <string name="save_share_arts">You can save and share your arts!</string>
+    <string name="share">Share</string>
+    <string name="save">Save</string>
+    <string name="home">Home</string>
+    <string name="community">Community</string>
+    <string name="my_art">My Art</string>
+    <string-array name="art_sizes">
+        <item>256x256</item>
+        <item>512x512</item>
+        <item>1024x1024</item>
+    </string-array>
+    <string name="test_prompt">Character concept art of an anime goddess || cute - fine - face,pretty face, realistic shaded perfect face, trending on artstation</string>
+    <string name="photography_prompt">mid-shot, Sigma 40mm, f/1.4 DG HSM</string>
+    <string name="digital_prompt">Vector art</string>
+    <string name="three_dimension_prompt">3D render, houdini 3D, octane 3D, ZBrush, Maya, Cinema 4D, Blender</string>
+    <string name="cyberpunk_prompt">Cyberpunk, high detail, smoke, sharp, neon lights,Vaporwave, neon, pink, blue,geometric, futuristic, \'80s.</string>
+    <string name="abstract_prompt">Abstract expressionism, paint splatters, Jackson Pollock</string>
+    <string name="cartoon_prompt">1990s Disney, cel shading</string>
+    <string name="anime_prompt">Anime, trending on art-station</string>
+    <string name="realistic_prompt">detailed, hyper-detailed, very realistic</string>
+    <string name="architecture_prompt">architecture, buildings, cityscape</string>
+    <string name="midjourney_prompt">Midjourney v5 style,highly detail face!! ,detailed environment,trending on artstation</string>
+    <string name="google_sign_in">Sign in with Google</string>
+    <string name="flutterwave_public_key">FLWPUBK_TEST-99ffcd032e3a1d60e85af816070d4b91-X</string>
+    <string name="flutterwave_encryption_key">FLWSECK_TESTb1bb1abdfd1e</string>
+    <string name="my_art_collections">My Art Collections</string>
+    <string name="enter_username_here">Enter username here</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="pay_later">Pay Later</string>
+    <string name="create_stunning_art">Create\nSave\nShare stunning art.</string>
+    <string name="sign_in_to_begin">Get started</string>
+
+</resources>

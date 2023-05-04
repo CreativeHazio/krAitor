@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_artists_cardview"
+    android:theme="@style/AppTheme"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/light_purple"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="7dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="40dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/top_artist_profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            app:shapeAppearanceOverlay="@style/rounded_top_artist_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/top_artist_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:text="CreativeHazio"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semi_bold"
+            app:layout_constraintStart_toEndOf="@+id/top_artist_profile_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/top_artist_profile_likes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4500 likes"
+            android:textColor="@color/light_blue"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintStart_toStartOf="@+id/top_artist_profile_name"
+            app:layout_constraintTop_toBottomOf="@+id/top_artist_profile_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

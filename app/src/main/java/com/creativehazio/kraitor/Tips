@@ -1,0 +1,13 @@
+// Get the list of images that the user wants to share
+val images = listOf(yourFirstImage, yourSecondImage, yourThirdImage)
+
+// Create an intent to share the images
+val shareIntent = Intent(Intent.ACTION_SEND_MULTIPLE).apply {
+    type = "image/*"
+    putParcelableArrayListExtra(Intent.EXTRA_STREAM, ArrayList(images))
+}
+
+// Launch the share dialog
+startActivity(Intent.createChooser(shareIntent, "Share images using"))
+
+Create a splash screen

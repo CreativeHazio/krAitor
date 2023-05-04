@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_art_graph"
+    app:startDestination="@id/myArtFragment2">
+
+    <fragment
+        android:id="@+id/myArtFragment2"
+        android:name="com.creativehazio.kraitor.ui.screens.fragment.MyArtFragment"
+        android:label="fragment_my_art"
+        tools:layout="@layout/fragment_my_art" >
+        <action
+            android:id="@+id/action_myArtFragment2_to_create_art_graph"
+            app:destination="@id/create_art_graph" />
+    </fragment>
+    <include app:graph="@navigation/create_art_graph" />
+</navigation>

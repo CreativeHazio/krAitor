@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="rounded_top_artist_image">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="spinnerItemStyle">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:textColor</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.fragment.CreatedArtsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/art_created_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/poppins_extra_bold"
+            android:text="@string/art_created"
+            android:textSize="@dimen/text_headings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cta_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/save_share_arts"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/art_created_txt" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/created_arts_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cta_text" />
+
+        <Button
+            android:id="@+id/share_art_button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            style="?attr/materialButtonOutlinedStyle"
+            android:backgroundTint="?attr/colorOnPrimary"
+            app:strokeColor="@color/light_purple"
+            app:strokeWidth="2dp"
+            app:cornerRadius="30dp"
+            android:text="@string/share"
+            android:textColor="?android:textColor"
+            app:layout_constraintEnd_toStartOf="@+id/save_art_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/created_arts_recyclerView" />
+
+        <Button
+            android:id="@+id/save_art_button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/light_yellow"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            app:cornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/share_art_button"
+            app:layout_constraintTop_toTopOf="@+id/share_art_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

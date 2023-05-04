@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.fragment.CreateArtFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_art_constraint_view">
+
+            <TextView
+                android:id="@+id/create_art_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/poppins_extra_bold"
+                android:text="@string/create_art"
+                android:textSize="@dimen/text_headings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/select_options_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/select_options"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sub_headings"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_art_txt" />
+
+            <TextView
+                android:id="@+id/number_of_arts_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/number_of_art"
+                android:fontFamily="@font/poppins_semi_bold"
+                app:layout_constraintTop_toBottomOf="@id/select_options_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Button
+                android:id="@+id/create_one_img_btn"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="?attr/colorOnPrimary"
+                android:text="1"
+                android:textColor="?android:textColor"
+                app:cornerRadius="30dp"
+                app:layout_constraintEnd_toStartOf="@+id/create_two_img_btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/number_of_arts_text"
+                app:strokeColor="@color/light_purple"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/create_two_img_btn"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="?attr/colorOnPrimary"
+                android:text="2"
+                android:textColor="?android:textColor"
+                app:cornerRadius="30dp"
+                app:layout_constraintEnd_toStartOf="@+id/create_three_img_btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/create_one_img_btn"
+                app:layout_constraintTop_toTopOf="@+id/create_one_img_btn"
+                app:strokeColor="@color/light_purple"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/create_three_img_btn"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="?attr/colorOnPrimary"
+                android:text="3"
+                android:textColor="?android:textColor"
+                app:cornerRadius="30dp"
+                app:layout_constraintEnd_toStartOf="@+id/create_four_img__btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/create_two_img_btn"
+                app:layout_constraintTop_toTopOf="@+id/create_one_img_btn"
+                app:strokeColor="@color/light_purple"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/create_four_img__btn"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="?attr/colorOnPrimary"
+                android:text="4"
+                android:textColor="?android:textColor"
+                app:cornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/create_three_img_btn"
+                app:layout_constraintTop_toTopOf="@+id/create_one_img_btn"
+                app:strokeColor="@color/light_purple"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:id="@+id/art_style_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/art_style"
+                android:fontFamily="@font/poppins_semi_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/create_one_img_btn"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/art_style_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintTop_toBottomOf="@id/art_style_txt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Spinner
+                android:id="@+id/art_size_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/edit_txt_bg"
+                android:entries="@array/art_sizes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/art_style_recyclerview" />
+
+            <EditText
+                android:id="@+id/art_prompt_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:maxHeight="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="20dp"
+                android:gravity="start"
+                android:background="@drawable/edit_txt_bg"
+                android:hint="Enter prompt e.g A man riding down the slope of a downhill"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                app:layout_constraintTop_toBottomOf="@id/art_size_spinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:text="Max. 400 characters"
+                android:fontFamily="@font/poppins_light"
+                app:layout_constraintTop_toBottomOf="@+id/art_prompt_edt"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Button
+                android:id="@+id/create_art_btn"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="35dp"
+                android:backgroundTint="@color/light_blue"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/create_art_btn_text"
+                android:textAllCaps="false"
+                app:cornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/art_prompt_edt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

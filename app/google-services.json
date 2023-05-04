@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "30215505014",
+    "project_id": "kraitor-3fd09",
+    "storage_bucket": "kraitor-3fd09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30215505014:android:113c3726a8498ee708cb57",
+        "android_client_info": {
+          "package_name": "com.creativehazio.kraitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30215505014-n142bprhlg7f4r01puaitt95vaqcrod3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh5y6Z4cPddgxRSCf_ohIKkrE6O8SP-xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30215505014-n142bprhlg7f4r01puaitt95vaqcrod3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
